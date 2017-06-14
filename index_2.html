@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		header {
+			/*background-color: rgb(237, 233, 208);*/
+			margin-bottom: 10px;
+		}
+
+		section {
+			background-color: rgb(237, 218, 208);
+		}
+
+		footer {
+			background-color: rgb(208, 237, 227);
+		}
+
+		aside {
+			background-color: rgb(237, 208, 232);
+			float:right;
+			width:400px;
+		}
+
+		#headerMenu {
+			display: inline-block;
+			vertical-align: middle;
+			background: no-repeat url(assets/header-menu.png);
+			background-size: cover;
+			width: 20px;
+			height: 20px;
+			margin: 0 10px 0px 20px;
+			border: 1px solid;
+
+
+		}
+
+		#logo {
+			display: inline-block;
+			vertical-align: middle;	
+			background: no-repeat url(assets/logo.png);
+			width: 80px;
+			height: 30px;
+			background-size: cover;
+			border: 1px solid;
+			//border-radius: 5px;
+			margin-right: 50px;
+		}
+
+		#master-search {
+			display: inline-block;
+			margin-top: 3px;
+			max-width: 650px;
+			overflow: hidden;
+			padding: 0;
+			position: relative;
+			border: 1px solid;
+			vertical-align: middle
+		}
+
+		#search-border {
+			border:1px solid;
+			box-shadow: inset 0 1px 2px #eee;
+			height:29px;
+			font-size: 14px;
+			overflow:hidden;
+			position: relative;
+			background-color: #fff;
+			line-height: 30px;
+			box-sizing: border-box;
+			/*display: inline-block;*/
+		}
+
+		#search {
+			width:400px;
+			height: 100%;
+			font-size: 16px;
+			border:0;
+			display: inline-block;
+			box-sizing: border-box;
+			padding:2px 6px;
+			margin:0 0 2px;
+
+
+			//border:solid;
+		}
+
+		#search-button {
+			float:right;
+			height:29px;
+			
+		}
+
+		#search-button-content {
+			display: block;
+			/*background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-2x-vfl-xrsMu.webp) -119px -137px;*/
+			width:35px;
+			height: 15px;
+			border:1px solid transparent;
+		}
+
+		#header-short-cut {
+			display: inline-block;
+			vertical-align: middle;	
+			background: no-repeat url(assets/header-shortcut.png);
+			width: 120px;
+			height: 30px;
+			background-size: cover;
+			border: 1px solid;
+			float:right;
+			margin-right: 30px;
+
+		}
+
+		.group:before,
+		.group:after {
+  			content: "";
+  			display: table;
+		}
+		.group:after {
+  			clear: both;
+		}
+		.group {
+  			clear: both;
+  			*zoom: 1;
+		}
+
+		#main {
+			width:650px;
+			height:5000px;
+			float:left;
+			margin-left:50px;
+			padding:5px;
+
+		}
+
+		
+
+		#video-list {
+			float:left;
+			padding:15px;
+		}
+
+		.small-video {
+			float:left;
+			display:inline-block;
+		}
+
+		.video-detail {
+			
+			float:right;
+			display: inline-block;
+
+		}
+
+		.span1 {
+			font-size:16px;
+			font-weight: 700;
+			color:#333;
+
+		}
+
+		.span2 {
+			display: block;
+			
+		}
+
+
+		a {
+			text-decoration: none;
+		}
+
+
+	</style>
+
+</head>
+<body>
+	<header>
+	
+		<span id=headerMenu></span>
+		<a href="http://youtube.com" id="logo"></a>
+		
+		<form id="master-search">
+		<button id="search-button" type="submit">
+			<span id="search-button-content">Search</span>
+		</button>
+		<div id="search-border">
+		<input id="search" type="search" title="Search" placeholder="Search" style="outline:none">
+		</div>
+		</form>
+
+		<div id="header-short-cut">
+		</div>
+
+	</header>
+	<div class="group">
+
+	<section id="main">
+		<article id="video">
+		<iframe width="640" height="360" src="https://www.youtube.com/embed/XZmGGAbHqa0" frameborder="0" allowfullscreen></iframe>
+		</article>
+		<article id= "comments">
+			
+		</article>
+	</section> <!-- section "main"-->
+	<aside id="video-list">
+		<div class="small-video">
+		<img width="168" alt="" src="https://i.ytimg.com/vi/zDAYZU4A3w0/hqdefault.jpg?custom=true&amp;w=336&amp;h=188&amp;stc=true&amp;jpg444=true&amp;jpgq=90&amp;sp=68&amp;sigh=64hvsreUOlzIgH1HsN_jeeL3B_Q" height="94" >
+		</div><!-- small-video -->
+
+		<div class="video-detail">
+		<span class="span1">
+		<a href="http://youtube.com/watch?v=zDAYZU4A3w0" title="Google Data Center 360° Tour" >Google Data Center 360° Tour</a>
+		</span>
+		
+		<span class="span2">Google Cloud</span>
+		<span class="span3">1,738,000,000 views</span>
+		
+		</div><!--video-detail -->
+
+		
+
+	
+	</aside><!-- video-list -->
+	</div>
+	<footer>
+	this is footer
+	</footer>
+	
+</body>
+</html>
+	

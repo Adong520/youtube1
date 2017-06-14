@@ -1,0 +1,31 @@
+.main-header {
+	background: red url(YouTube-logo-full_color.png) top left;
+}
+
+.logo {
+	
+    //background-size: 548px 322px;
+    //width: 73.5px;
+    //height: 30px;
+}
+
+.col-3-5,
+.col-2-5  {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.col-3-5 {
+	background-color: #d88ab9;
+	width: 48%;
+
+}
+
+.col-2-5 {
+	background-color: #88ce97;
+	width: 40%;
+}
+
+.main-footer {
+	background-color: #707acc
+}
